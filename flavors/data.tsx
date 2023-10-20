@@ -1,5 +1,17 @@
+interface Flavor {
+  component: ({ className }: { className: string }) => JSX.Element
+  colors: {
+    ticket: string
+    border: string
+    text: string
+    month: string
+    time: string
+  }
+  figure?: string
+}
+
 /* eslint-disable no-tabs */
-export const FLAVORS = {
+export const FLAVORS: Record<string, Flavor> = {
   javascript: {
     component: ({ className }: { className: string }) => (
       <svg
@@ -25,7 +37,6 @@ export const FLAVORS = {
     figure: '-right-16 -bottom-16'
   },
   typescript: {
-    name: 'typescript',
     component: ({ className }: { className: string }) => (
       <svg
         className={className}
@@ -478,7 +489,8 @@ export const FLAVORS = {
       ticket: 'bg-[#000]/10',
       border: 'border-[#83CD29]',
       text: 'text-[#83CD29]',
-      month: 'text-[#83CD29]'
+      month: 'text-[#83CD29]',
+      time: 'text-[#83CD29]'
     }
   },
   deno: {

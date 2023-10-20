@@ -42,7 +42,7 @@ const Ticket = ({
     colors: { border, month, text, ticket, time },
     figure
   },
-  user: { avatar, name, username }
+  user: { avatar, name }
 }: TicketProps) => {
   return (
     <Atropos id='#ticket'>

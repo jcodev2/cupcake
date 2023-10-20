@@ -28,8 +28,7 @@
     "**/*.jsx",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "tailwind.config.js",
-    "components/Ticket/Ticket.jsx"
+    "tailwind.config.js"
   ],
   "exclude": ["node_modules"]
 }
