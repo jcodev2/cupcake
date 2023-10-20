@@ -2644,7 +2644,7 @@ const TicketHome = ({ initialFlavor }: TicketHomeProps) => {
       const randomKey = keys[Math.floor(Math.random() * keys.length)]
 
       setFlavorKey(randomKey)
-    }, 2500)
+    }, 5000)
 
     return () => clearInterval(interval)
   }, [])
@@ -2673,7 +2673,7 @@ const TicketHome = ({ initialFlavor }: TicketHomeProps) => {
     <div className='flex h-full w-full flex-col justify-center gap-y-12'>
       <Ticket
         transition={!initialFlavor}
-        number={777}
+        number={1}
         flavor={flavor}
         user={{
           name: user?.firstName ?? 'usuario',
